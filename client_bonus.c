@@ -50,6 +50,7 @@ void	send_message(pid_t server_pid, char *message)
 		i++;
 	}
 	message[i] = '\0';
+	action(server_pid, message[i]);
 }
 
 int	main(int ac, char **av)
