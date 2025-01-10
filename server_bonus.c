@@ -26,7 +26,10 @@ void	handlesig(int sig, siginfo_t *info, void *context)
 	bit_count++;
 	if (bit_count == 8)
 	{
-		ft_printf("%c", current_byte);
+		if (current_byte == '\0')
+			ft_printf("\n");
+		else
+			ft_printf("%c", current_byte);
 		bit_count = 0;
 		current_byte = 0;
 		if (info && info->si_pid)
