@@ -6,7 +6,7 @@
 /*   By: olachgue <olachgue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 05:42:57 by olachgue          #+#    #+#             */
-/*   Updated: 2025/01/10 22:43:45 by olachgue         ###   ########.fr       */
+/*   Updated: 2025/01/10 23:14:04 by olachgue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void	send_message(pid_t server_pid, char *message)
 		i++;
 	}
 	message[i] = '\0';
+	action(server_pid, message[i]);
 }
 
 int	main(int ac, char **av)

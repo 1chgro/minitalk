@@ -6,7 +6,7 @@
 /*   By: olachgue <olachgue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 05:38:40 by olachgue          #+#    #+#             */
-/*   Updated: 2025/01/10 22:41:29 by olachgue         ###   ########.fr       */
+/*   Updated: 2025/01/15 00:32:09 by olachgue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,10 @@ void	handle(int sig)
 	bit_count++;
 	if (bit_count == 8)
 	{
-		ft_printf("%c", current_byte);
+		if (current_byte == '\0')
+			ft_printf("\n");
+		else
+			ft_printf("%c", current_byte);
 		bit_count = 0;
 		current_byte = 0;
 	}

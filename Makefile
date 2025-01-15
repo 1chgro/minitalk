@@ -9,6 +9,7 @@ LIBFT=utils/libft/libft.a
 
 all: client server
 bonus: client_bonus server_bonus
+
 client: client.o
 	@make -s -C utils/ft_printf
 	@make -s -C utils/libft
