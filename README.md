@@ -11,7 +11,6 @@ Minitalk is a 42 Network project that introduces inter-process communication (IP
 ### Files
 - **server.c**: Implements the server program that listens for and processes messages from the client.
 - **client.c**: Implements the client program that encodes and sends messages to the server.
-- **minitalk.h**: Contains shared function prototypes, macros, and headers.
 - **Makefile**: Automates compilation of the project.
 
 ## Usage
